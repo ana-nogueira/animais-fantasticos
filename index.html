@@ -10,17 +10,17 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="menu js-menu">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
       <li><a href="#contato">Contato</a></li>
-      <li><a href="https://www.origamid.com/"> Dev ⭢ </a></li>
+      <li><a href="https://www.origamid.com/">Dev → </a></li>
     </ul>
   </nav>
-  <section class="grid-section animais" id="animais">
+  <section class="grid-section animais js-scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul>
+    <ul class="animais-lista js-tabmenu">
       <li>
         <img src="img/imagem1.jpg" alt="">
       </li>
@@ -41,8 +41,8 @@
       </li>
     </ul>
 
-    <div class="animais-descricao">
-      <section>
+    <div class="animais-descricao js-tabcontent">
+      <section class="ativo">
         <h2>Raposa</h2>
         <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.</p>
         <p>Doze espécies pertencem ao grupo monofilético de "raposas verdadeiras" do gênero Vulpes. Aproximadamente outras 25 espécies atuais ou extintas são parte do grupo parafilético das raposas sul-americanas ou do grupo periférico, que consiste na raposa-orelhas-de-morcego, raposa-cinzenta e raposa-das-ilhas.</p>
@@ -81,29 +81,23 @@
       </section>
     </div>
   </section>
-  <section class="grid-section faq" id="faq">
-    <h1>FAQ</h1>
-    <dl>
+  <section class="grid-section faq js-scroll" id="faq">
+    <h1 class="titulo">FAQ</h1>
+    <dl class="faq-lista js-accordion">
       <dt>Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsam provident dolores dignissimos officia repellat minima distinctio culpa doloribus excepturi ipsum reprehenderit, nobis impedit doloremque?
       </dd>
-    </dl>
-    <dl>
       <dt>Eles são fantásticos?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsam provident dolores dignissimos officia repellat minima distinctio culpa doloribus excepturi ipsum reprehenderit, nobis impedit doloremque?</dd>
-    </dl>
-    <dl>
       <dt>Qual a diferença?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsam provident dolores dignissimos officia repellat minima distinctio culpa doloribus excepturi ipsum reprehenderit, nobis impedit doloremque?</dd>
-    </dl>
-    <dl>
       <dt>Como proteger?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsam provident dolores dignissimos officia repellat minima distinctio culpa doloribus excepturi ipsum reprehenderit, nobis impedit doloremque?</dd>
     </dl>
   </section>
 
-  <section class="grid-section contato" id="contato">
-    <h1>Contato</h1>
+  <section class="grid-section contato js-scroll" id="contato">
+    <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="img/mapa.png" alt="Mapa">
     </div>
@@ -119,7 +113,7 @@
     <p>Todos os direitos reservados.</p>
   </footer>
 
-  <script src="./main.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
